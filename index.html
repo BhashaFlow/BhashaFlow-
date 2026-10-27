@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhashaFlow — Autonomous OS Agent Overlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="agent-container">
+        <header class="hud-header">
+            <div class="brand">
+                <span class="status-dot pulse"></span>
+                <h1>BHASHA<span>FLOW</span></h1>
+            </div>
+            <div class="system-stats">
+                <span class="badge" id="hud-status">STATUS: STANDBY</span>
+                <span class="latency" id="hud-latency">0ms</span>
+            </div>
+        </header>
+
+        <div class="visualizer-container">
+            <div class="wave-bars" id="waveBars">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="transcript-display" id="transcript">"Listening for voice instructions..."</p>
+        </div>
+
+        <div class="agent-terminal">
+            <div class="terminal-title">AGENTIC WORKFLOW TRACE</div>
+            <div class="steps-feed" id="stepsFeed">
+                <div class="step-item ready">
+                    <span class="step-id">[INIT]</span>
+                    <span class="step-desc">System Architecture loaded. Safe execution sandbox active.</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="hud-controls">
+            <button id="micBtn" class="primary-btn">
+                <span>Voice Command</span>
+            </button>
+            <button id="mockRunBtn" class="secondary-btn">Test Mock Flow</button>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
